@@ -19,7 +19,7 @@ Weiwen Chen
 <span class="author-block">
 <a href="https://www.cis.um.edu.mo/~cmpun/" target="_blank">Chi-Man Pun</a><sup> 📮</sup>
 </span>
-  ( 👨‍💻‍ Equal contributions, 📮 Corresponding )
+  ( 👨‍💻‍ Equal contributions, 📮 Corresponding authors)
 </div>
 
 <b>University of Macau, SIAT CAS, Huizhou University</b>
