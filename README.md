@@ -27,5 +27,6 @@ Weiwen Chen
 2024 AAAI CONFERENCE ON ARTIFICIAL INTELLIGENCE (AAAI 2024)
 
 [Project](https://cxh-research.github.io/DeVigNet/) | [Code](https://github.com/CXH-Research/DeVigNet) | [VigSet (Kaggle)](https://www.kaggle.com/datasets/xuhangc/vigset) 
+--- 
 
 The code is scheduled for release around the date of the AAAI conference.
