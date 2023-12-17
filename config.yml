@@ -1,0 +1,29 @@
+VERBOSE: True
+
+MODEL:
+  SESSION: 'LOL'
+  INPUT: 'input'
+  TARGET: 'target'
+
+# Optimization arguments.
+OPTIM:
+  BATCH_SIZE: 4
+  NUM_EPOCHS: 100
+  LR_INITIAL: 2e-4
+  LR_MIN: 1e-6
+  SEED: 3407
+  WANDB: False
+
+TRAINING:
+  VAL_AFTER_EVERY: 1
+  RESUME: False
+  PS_W: 128
+  PS_H: 128
+  TRAIN_DIR: '../dataset/VigSet/train/' # path to training data
+  VAL_DIR: '../dataset/VigSet/test/'     # path to validation data
+  SAVE_DIR: './checkpoints/'          # path to save models and images
+  ORI: True
+
+TESTING:
+  WEIGHT: './checkpoints/best.pth'
+  SAVE_IMAGES: True
