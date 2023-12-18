@@ -4,15 +4,6 @@ import einops
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from timm.models.layers import DropPath
-
-def discriminator_block(in_filters, out_filters, normalization=False):
-    """Returns downsampling layers of each discriminator block"""
-    layers = [nn.Conv2d(in_filters, out_filters, 3, stride=2, padding=1), nn.LeakyReLU(0.2)]
-    if normalization:
-        layers.append(nn.InstanceNorm2d(out_filters, affine=True))
-        # layers.append(nn.BatchNorm2d(out_filters))
-    return layers
 
 
 class ConvLayer(nn.Module):
@@ -124,10 +115,6 @@ class SPP(nn.Module):
         out.append(x)
 
         return self.fusion(torch.cat(out, dim=1))
-
-
-
-
 
 class DAFT(nn.Module):
 
@@ -257,7 +244,6 @@ class DAFT(nn.Module):
         out_rgb = self.final(out_rgb)
 
         return out_rgb
-
 
 
 class HCAM(nn.Module):
@@ -442,7 +428,6 @@ class NextAttentionZ(nn.Module):
         return x
 
 
-
 class TransformerBlock(nn.Module):
     def __init__(self, dim, num_heads=1, ffn_expansion_factor=2.66, bias=True, LayerNorm_type='WithBias'):
         super(TransformerBlock, self).__init__()
@@ -564,6 +549,7 @@ class ACEM(nn.Module):
 
         return y + x * self.gamma
 
+
 class LBlock(nn.Module):
     def __init__(self):
         super(LBlock, self).__init__()
@@ -572,6 +558,7 @@ class LBlock(nn.Module):
     def forward(self, inp):
         res = self.block(inp)
         return res
+
 
 class HBlock(nn.Module):
 
