@@ -59,3 +59,18 @@ python infer.py
 #  Acknowledgement
 
 This work was supported in part by the Science and Technology Development Fund, Macau SAR, under Grant 0087/2020/A2 and Grant 0141/2023/RIA2, in part by the National Natural Science Foundations of China under Grant 62172403, in part by the Distinguished Young Scholars Fund of Guangdong under Grant 2021B1515020019, in part by the Excellent Young Scholars of Shenzhen under Grant RCYX20200714114641211.
+
+# Citation
+```bib
+@article{Luo_Chen_Chen_Li_Wang_Pun_2024, 
+    title={Devignet: High-Resolution Vignetting Removal via a Dual Aggregated Fusion Transformer with Adaptive Channel Expansion}, 
+    volume={38}, 
+    DOI={10.1609/aaai.v38i5.28193}, 
+    number={5}, 
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    author={Luo, Shenghong and Chen, Xuhang and Chen, Weiwen and Li, Zinuo and Wang, Shuqiang and Pun, Chi-Man}, 
+    year={2024}, 
+    month={Mar.}, 
+    pages={4000-4008} 
+}
+```
